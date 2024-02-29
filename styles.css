@@ -7,34 +7,41 @@
   font-family: "Roboto";
   box-sizing: border-box;
   text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+.row {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 html {
   background-color: #ffffff;
 }
 
-.title--orange{
-    color: #F06449;
-    font-weight: bold;
+.title--orange {
+  color: #f06449;
+  font-weight: bold;
 }
 
 .title--landing {
-    font-size: 100px;
+  font-size: 100px;
 }
 
 /* To Make Interactive Buttons That Get Larger On Hover And Smaller On Click */
 
 .button__click {
-    transition: all 300ms ease;
-    cursor: pointer;
+  transition: all 300ms ease;
+  cursor: pointer;
 }
 
 .button__click:active {
-    transform: scale(0.9);
+  transform: scale(0.9);
 }
 
 .button__click:hover {
-    transform: scale(1.1)
+  transform: scale(1.1);
 }
 
 /* landing-page */
@@ -47,92 +54,95 @@ html {
 }
 
 header {
-    width: 100%;
-    max-width: 900px;
-    padding: 0 28px;
-    content: "";
-    position: absolute;
-    top: 50%; left: 50%;
-    transform: translate(-50%,-50%);
+  width: 100%;
+  max-width: 900px;
+  padding: 0 28px;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .header__para {
-    color: #000;
-    max-width: 500px;
-    font-size: 20px;
-    line-height: 1.5;
-    margin-top: 24px;
+  color: #000;
+  max-width: 500px;
+  font-size: 20px;
+  line-height: 1.5;
+  margin-top: 24px;
 }
 
 .social__link--wrapper {
-    display: flex;
-    margin-top: 24px;
+  display: flex;
+  margin-top: 24px;
 }
 
 .social__link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 8px;
-    width: 32px;
-    height: 32px;
-    border-radius: 100%;
-    background-color: #F06449;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 8px;
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  background-color: #f06449;
 }
 
 .personal-icons {
-    color: #FFFFFF;
+  color: #ffffff;
 }
 
 .mail__button {
-    color: white;
-    width: 70px;
-    height: 70px;
-    border: none;
-    border-radius: 100%;
-    font-size: 32px;
-    background-color: #242424;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    bottom: 24px; right: 24px;
+  color: white;
+  width: 70px;
+  height: 70px;
+  border: none;
+  border-radius: 100%;
+  font-size: 32px;
+  background-color: #242424;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
 }
 
 /* Animation Of A Scrolling Mouse */
 
 .scroll__button {
-    width: 20px;
-    height: 30px;
-    border-radius: 24px;
-    border: 2px solid #242424;
-    background-color: white;
-    position: absolute;
-    bottom: 24px; left: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 20px;
+  height: 30px;
+  border-radius: 24px;
+  border: 2px solid #242424;
+  background-color: white;
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .scroll__circle {
-    width: 4px;
-    height: 4px;
-    border-radius: 100%;
-    background-color: #242424;
-    animation: scroll 1000ms infinite alternate-reverse;
+  width: 4px;
+  height: 4px;
+  border-radius: 100%;
+  background-color: #242424;
+  animation: scroll 1000ms infinite alternate-reverse;
 }
 
 @keyframes scroll {
-    0% {
-        transform: translateY(3px);
-    }
-    100% {
-        transform: translateY(-3px);
-    }
+  0% {
+    transform: translateY(3px);
+  }
+  100% {
+    transform: translateY(-3px);
+  }
 }
 
 .fas.fa-envelope {
-    color: white;
+  color: white;
 }
 
 /* navigation bar */
@@ -149,14 +159,14 @@ nav {
 }
 
 .personal-logo__wrapper {
-    max-width: 80px;
-    max-height: 80px;
+  max-width: 80px;
+  max-height: 80px;
 }
 
 .personal-logo {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 .nav__link {
   margin: 0 12px;
@@ -183,6 +193,16 @@ nav {
   left: 0;
 }
 
-.dark-mode{
-    font-size: 20px;
+.dark-mode {
+  font-size: 20px;
 }
+
+/* Projects */
+
+#projects .title--landing {
+  text-align: center;
+  font-size: 48px;
+  margin: 48px 0;
+}
+
+
