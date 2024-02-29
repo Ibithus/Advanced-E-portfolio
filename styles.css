@@ -22,6 +22,21 @@ html {
     font-size: 100px;
 }
 
+/* To Make Interactive Buttons That Get Larger On Hover And Smaller On Click */
+
+.button__click {
+    transition: all 300ms ease;
+    cursor: pointer;
+}
+
+.button__click:active {
+    transform: scale(0.9);
+}
+
+.button__click:hover {
+    transform: scale(1.1)
+}
+
 /* landing-page */
 
 #landing-page {
@@ -34,6 +49,7 @@ html {
 header {
     width: 100%;
     max-width: 900px;
+    padding: 0 28px;
     content: "";
     position: absolute;
     top: 50%; left: 50%;
@@ -57,7 +73,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 12px;
+    margin: 0 8px;
     width: 32px;
     height: 32px;
     border-radius: 100%;
@@ -68,13 +84,64 @@ header {
     color: #FFFFFF;
 }
 
+.mail__button {
+    color: white;
+    width: 70px;
+    height: 70px;
+    border: none;
+    border-radius: 100%;
+    font-size: 32px;
+    background-color: #242424;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 24px; right: 24px;
+}
+
+/* Animation Of A Scrolling Mouse */
+
+.scroll__button {
+    width: 20px;
+    height: 30px;
+    border-radius: 24px;
+    border: 2px solid #242424;
+    background-color: white;
+    position: absolute;
+    bottom: 24px; left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scroll__circle {
+    width: 4px;
+    height: 4px;
+    border-radius: 100%;
+    background-color: #242424;
+    animation: scroll 1000ms infinite alternate-reverse;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateY(3px);
+    }
+    100% {
+        transform: translateY(-3px);
+    }
+}
+
+.fas.fa-envelope {
+    color: white;
+}
+
 /* navigation bar */
 
 nav {
   min-height: 40px;
-  padding-top: 24px;
+  padding: 0 24px;
   width: 100%;
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
   display: flex;
   align-items: center;
