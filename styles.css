@@ -17,7 +17,7 @@
 }
 
 html {
-  background-color: #ffffff;
+  background-color: rgb(245, 245, 245);
 }
 
 .title--orange {
@@ -93,6 +93,7 @@ header {
 }
 
 .mail__button {
+    z-index: 10;
   color: white;
   width: 70px;
   height: 70px;
@@ -103,7 +104,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
+  position: fixed;
   bottom: 24px;
   right: 24px;
 }
@@ -169,7 +170,7 @@ nav {
   height: 100%;
   object-fit: contain;
 }
-.nav__link {
+.nav__link, .footer__link {
   margin: 0 12px;
   font-size: 16px;
   font-weight: 700;
@@ -276,3 +277,42 @@ nav {
   color: white;
   opacity: 1;
 }
+
+/* Footer */
+
+footer {
+    padding: 120px 0;
+    background-color: #242424;
+}
+
+.footer__row {
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__link--wrapper {
+    margin: 28px 0;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__link {
+    color: white;
+    font-weight: 400;
+}
+
+.footer__copyright {
+    color: white;
+    font-size: 16px;
+}
+
+footer .link__hover-effect::after {
+    background-color: white;
+  }
+
