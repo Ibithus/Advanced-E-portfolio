@@ -148,6 +148,40 @@ header {
   color: white;
 }
 
+/* about me */
+
+.about__container {
+  display: flex;
+  opacity: 1;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 900px;
+  height: 700px;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 20px 80px rgba(0, 0, 0, 0.45);
+}
+
+.about__half--info,
+.about__half--contact {
+  width: 50%;
+  height: 100%;
+}
+
+.about__half--contact {
+    color: #FFF;
+    background-color: #242424;
+}
+
+.about__half--info {
+    color: #242424;
+    background-color: white;
+}
+
 /* navigation bar */
 
 nav {
