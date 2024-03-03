@@ -173,24 +173,23 @@ header {
 }
 
 .about__half--contact {
-    color: #FFF;
-    background-color: #242424;
-    padding: 40px 72px;
+  color: #fff;
+  background-color: #242424;
+  padding: 40px 72px;
 }
 
 .about__half--info {
-    color: #242424;
-    background-color: white;
-    padding: 40px 72px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  color: #242424;
+  background-color: rgb(245, 245, 245);
+  padding: 40px 72px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .about__half--title {
   font-size: 24px;
   margin-bottom: 8px;
-  
 }
 
 .about__half--subtitle {
@@ -246,7 +245,6 @@ header {
   opacity: 1;
   font-size: 16px;
 }
-
 
 /* navigation bar */
 
