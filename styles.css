@@ -176,6 +176,20 @@ header {
   color: #fff;
   background-color: #242424;
   padding: 40px 72px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about__half--title--contact {
+  font-size: 28px;
+  color: #FFF;
+  margin-bottom: 8px;
+}
+
+.about__half--subtitle--contact {
+  color: #FFF;
+  font-size: 14px;
 }
 
 .about__half--info {
