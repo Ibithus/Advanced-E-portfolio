@@ -2,6 +2,17 @@
 // service_9rcnbdg
 // wLsQljjo_DJbRAHvb
 
+let contrastToggle = false;
+function toggleContrast(){
+    contrastToggle = !contrastToggle;
+    if (contrastToggle) {
+        document.body.classList += " dark-theme"
+    }
+    else {
+        document.body.classList.remove("dark-theme")
+    }
+}
+
 function contact(event) {
   event.preventDefault();
   const loading = document.querySelector(" .about__overlay--loading");
@@ -25,4 +36,14 @@ function contact(event) {
         "The email service is temporarily unavailable, Please contact me directly on ibrahimahmed0@outlook.com"
       );
     });
+}
+
+let isAboutOpen = false;
+function toggleAbout() {
+    if (isAboutOpen) {
+        isAboutOpen = false
+        return document.body.classList.remove("about--open")
+    }
+    isAboutOpen = true
+    document.body.classList += " about--open";
 }

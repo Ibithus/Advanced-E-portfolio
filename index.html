@@ -6,7 +6,7 @@
     <title>Ibrahim Ahmed</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="app.js" defer></script>
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
     <script
       src="https://kit.fontawesome.com/c8e4d183c2.js"
       crossorigin="anonymous"
@@ -32,10 +32,8 @@
         <div class="nav__link--wrapper">
           <a class="nav__link link__hover-effect" href="">About</a>
           <a class="nav__link link__hover-effect" href="#projects">Projects</a>
-          <a class="nav__link link__hover-effect" href="">Contact</a>
-          <a class="nav__link link__hover-effect" href="">
-            <i class="fas fa-adjust dark-mode button__click"></i>
-          </a>
+          <a class="nav__link link__hover-effect" href="" onclick="toggleAbout()">Contact</a>
+          <i class="fas fa-adjust dark-mode button__click nav__link link__hover-effect" onclick="toggleContrast()"></i>
         </div>
       </nav>
       <header>
@@ -47,7 +45,7 @@
             <span class="title--orange">Aspiring Software Engineer</span> with a
             strong passion for building applications that enhance user
             experience and productivity. Here is a bit more
-            <span class="title--orange">about me.</span>
+            <span class="title--orange button__click" onclick="toggleAbout()">about me.</span>
           </p>
           <div class="social__link--wrapper">
             <div class="social__link button__click">
@@ -68,8 +66,8 @@
           </div>
         </div>
       </header>
-      <button class="mail__button button__click">
-        <a href="">
+      <button class="mail__button button__click" onclick="toggleAbout()">
+        <a href="#">
           <i class="fas fa-envelope"></i>
         </a>
       </button>
@@ -184,8 +182,8 @@
         <div class="about__overlay about__overlay--success">
           Thanks for the message. I look forward to speaking with you soon !!
         </div>
+        <i class="fas fa-times about__exit button__click" onclick="toggleAbout()"></i>
       </div>
-      <i class="fas fa-times about__exit button__click"></i>
     </div>
     <main>
       <section id="projects">
