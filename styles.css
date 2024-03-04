@@ -10,7 +10,8 @@
   scroll-behavior: smooth;
 }
 
-input,textarea {
+input,
+textarea {
   width: 100%;
   color: white;
   background-color: #242424;
@@ -34,11 +35,13 @@ label {
   font-weight: 700;
 }
 
-input:hover, textarea:hover {
+input:hover,
+textarea:hover {
   border-color: #dcdfe6;
 }
 
-input:focus , textarea:focus {
+input:focus,
+textarea:focus {
   border-color: #f06449;
 }
 
@@ -182,12 +185,6 @@ header {
 
 /* about me */
 
-.about__open .about__container {
-  z-index: 200;
-  visibility: visible;
-  box-shadow: 0 20px 80px rgba(0, 0, 0, 0.45);
-}
-
 .about__container {
   display: flex;
   visibility: hidden;
@@ -221,12 +218,12 @@ header {
 
 .about__half--title--contact {
   font-size: 28px;
-  color: #FFF;
+  color: #fff;
   margin-bottom: 8px;
 }
 
 .about__half--subtitle--contact {
-  color: #FFF;
+  color: #fff;
   font-size: 14px;
 }
 
@@ -268,8 +265,10 @@ header {
   z-index: -1;
   content: "";
   position: absolute;
-  top: 0; left: 0;
-  bottom: 0; right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   display: flex;
   align-items: center;
   justify-content: center;
