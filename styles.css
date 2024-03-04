@@ -211,6 +211,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
 }
 
 .about__half--title--contact {
@@ -256,6 +257,55 @@ header {
 .form__submit:active {
   border-color: #f06449;
   color: #f06449;
+}
+
+.about__overlay {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  bottom: 0; right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about__overlay--loading {
+  z-index: -1;
+  background-color: #242424;
+}
+
+.about__overlay--success {
+  background-color: #4bb543;
+  font-size: 36px;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  padding: 28px;
+}
+
+.fa-spinner {
+  color: white;
+  font-size: 80px;
+  animation: spinnerRotate 750ms infinite linear;
+}
+
+@keyframes spinnerRotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.about__exit {
+  content: "";
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  color: white;
+  font-size: 32px;
+  z-index: 100;
 }
 
 .about__half--info {
