@@ -2,15 +2,24 @@
 // service_9rcnbdg
 // wLsQljjo_DJbRAHvb
 
+let infoToggle = false;
+function toggleInfo() {
+  if (infoToggle) {
+    infoToggle = false;
+    return document.body.classList.remove("about__slider");
+  }
+  infoToggle = true;
+  document.body.classList += " about__slider";
+}
+
 let contrastToggle = false;
-function toggleContrast(){
-    contrastToggle = !contrastToggle;
-    if (contrastToggle) {
-        document.body.classList += " dark-theme"
-    }
-    else {
-        document.body.classList.remove("dark-theme")
-    }
+function toggleContrast() {
+  contrastToggle = !contrastToggle;
+  if (contrastToggle) {
+    document.body.classList += " dark-theme";
+  } else {
+    document.body.classList.remove("dark-theme");
+  }
 }
 
 function contact(event) {
@@ -40,10 +49,10 @@ function contact(event) {
 
 let isAboutOpen = false;
 function toggleAbout() {
-    if (isAboutOpen) {
-        isAboutOpen = false
-        return document.body.classList.remove("about--open")
-    }
-    isAboutOpen = true
-    document.body.classList += " about--open";
+  if (isAboutOpen) {
+    isAboutOpen = false;
+    return document.body.classList.remove("about--open");
+  }
+  isAboutOpen = true;
+  document.body.classList += " about--open";
 }

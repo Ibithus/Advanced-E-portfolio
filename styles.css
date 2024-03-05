@@ -157,7 +157,7 @@ header {
 .about--open .scroll {
   opacity: 0;
   visibility: hidden;
-  transition: all 400ms;
+  transition: all 300ms;
 }
 
 /* landing-page */
@@ -485,7 +485,22 @@ header {
 
 .about__button--switch {
   visibility: hidden;
-  opacity: 0;
+  position: absolute;
+  bottom: 30px;
+  left: 35%;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  border: hidden;
+  opacity: 1;
+  padding: 12px 24px;
+  background-color: #f06449;
+}
+
+.about__button--switch:active {
+  background-color: rgb(245, 245, 245);
+  border: 2px solid #f06449;
+  color: #f06449;
 }
 
 /* navigation bar */
@@ -691,11 +706,15 @@ footer .personal-logo {
   /* About Me */
 
   .about__container {
-    max-width: 600px;
+    max-width: 450px;
   }
 
   .about__half--contact {
-    visibility: hidden;
+    position: absolute;
+    left: -110%;
+    opacity: 0;
+    visibility: visible;
+    z-index: 1;
   }
 
   .about__half--info {
@@ -707,11 +726,37 @@ footer .personal-logo {
     width: 100%;
   }
 
+  .about__half--title {
+    font-size: 28px;
+  }
+
   .technology__image {
     max-height: 70px;
   }
 
   .about__half--para {
-    margin-bottom: 32px;
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+
+  .about__button--switch {
+    visibility: visible;
+  }
+
+  .about__slider .about__half--contact {
+    visibility: visible;
+    z-index: 1;
+    opacity: 1;
+    position: absolute;
+    top: 0; left: 0;
+    right: 0; bottom: 0;
+    width: 100%;
+  }
+}
+
+@media(max-width:572px) {
+  /* Navigation */
+  .nav_link {
+    visibility: hidden;
   }
 }

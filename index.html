@@ -88,7 +88,7 @@
           <br />
           Here is my <span class="title--orange">Technology Stack:</span>
         </p>
-        <button class="about__button__switch button__click">
+        <button class="about__button--switch button__click" onclick="toggleInfo()">
           Contact Info
         </button>
         <div class="technology__list">
@@ -184,7 +184,7 @@
         <div class="about__overlay about__overlay--success">
           Thanks for the message. I look forward to speaking with you soon !!
         </div>
-        <i class="fas fa-times about__exit button__click" onclick="toggleAbout()"></i>
+        <i class="fas fa-times about__exit button__click" onclick="toggleAbout(), toggleInfo()"></i>
       </div>
     </div>
     <main>
