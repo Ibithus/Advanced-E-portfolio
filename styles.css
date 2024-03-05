@@ -729,6 +729,9 @@ footer .personal-logo {
   }
 
   .about__half--info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     position: absolute;
     top: 0;
     left: 0;
@@ -739,6 +742,10 @@ footer .personal-logo {
 
   .about__half--title {
     font-size: 28px;
+  }
+
+  .technology__list {
+    margin-bottom: 72px;
   }
 
   .technology__image {
