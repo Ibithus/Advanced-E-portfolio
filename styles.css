@@ -49,16 +49,27 @@
   background-color: #0c97dc;
 }
 
-.dark-theme {
-  #contact__submit {
+.dark-theme #contact__submit {
     background-color: #0c97dc;
     border-color: #0c97dc;
   }
+
   #contact__submit:active {
     color: #0c97dc;
     background-color: transparent;
   }
-}
+
+  .dark-theme .about__button--switch {
+    background-color: #0c97dc;
+    border-color: #0c97dc;
+  }
+
+  .dark-theme .about__button--switch:active {
+    background-color: transparent;
+    border-color: #0c97dc;
+    color: #0c97dc;
+  }
+
 
 .dark-theme {
   .link__hover-effect::after {
