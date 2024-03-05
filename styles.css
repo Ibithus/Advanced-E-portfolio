@@ -28,7 +28,8 @@
 }
 
 .dark-theme {
-  input:focus, textarea:focus {
+  input:focus,
+  textarea:focus {
     border-color: #0c97dc;
   }
 }
@@ -145,8 +146,7 @@ section {
 }
 
 nav,
-header,
-.scroll__button {
+header {
   opacity: 1;
   visibility: visible;
   transition: all 600ms 800ms;
@@ -483,6 +483,11 @@ header {
   font-size: 16px;
 }
 
+.about__button--switch {
+  visibility: hidden;
+  opacity: 0;
+}
+
 /* navigation bar */
 
 nav {
@@ -569,6 +574,7 @@ nav {
 .project__image {
   width: 100%;
   height: 100%;
+  scale: 1.1;
   object-fit: contain;
   transition: all 300ms ease;
 }
@@ -590,7 +596,7 @@ nav {
     opacity: 0.8;
   }
   .project__image {
-    transform: scale(1.1);
+    transform: scale(1.2);
     filter: blur(5px);
   }
   .project__info {
@@ -661,3 +667,51 @@ footer .personal-logo {
 /* Responsiveness */
 
 /* Make project overlay lighter when it is in dark mode and remove transition on mouse when dark mode is initiated */
+
+@media (max-width: 768px) {
+  /* Navigation */
+  .title--landing {
+    font-size: 80px;
+  }
+  .header__para {
+    font-size: 18px;
+  }
+
+  /* Project List */
+  #projects .title--landing {
+    font-size: 36px;
+  }
+  .project__list {
+    padding: 0px 36px;
+  }
+  .project__info--title {
+    font-size: 20px;
+  }
+
+  /* About Me */
+
+  .about__container {
+    max-width: 600px;
+  }
+
+  .about__half--contact {
+    visibility: hidden;
+  }
+
+  .about__half--info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .technology__image {
+    max-height: 70px;
+  }
+
+  .about__half--para {
+    margin-bottom: 32px;
+  }
+}
