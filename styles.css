@@ -748,15 +748,55 @@ footer .personal-logo {
     z-index: 1;
     opacity: 1;
     position: absolute;
-    top: 0; left: 0;
-    right: 0; bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     width: 100%;
   }
 }
 
-@media(max-width:572px) {
+@media (max-width: 572px) {
   /* Navigation */
-  .nav_link {
-    visibility: hidden;
+  .nav__link--wrapper {
+    display: flex;
+  }
+  .title--landing {
+    font-size: 60px;
+  }
+  .header__para {
+    font-size: 16px;
+  }
+  .nav__link {
+    display: none;
+  }
+  .nav__link:nth-child(3),
+  .nav__link:nth-child(4) {
+    display: block;
+  }
+  /* About */
+
+  .about__container {
+    max-width: 350px;
+  }
+  .about__half--para {
+    font-size: 14px;
+  }
+  .technology__title {
+    font-size: 12px;
+  }
+  /* Project */
+  #projects .title--landing {
+    font-size: 28px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .project__info--para {
+    font-size: 14px;
+    max-width: 250px;
+  }
+  /*Footer*/
+  .footer__link, .footer__copyright {
+    font-size: 14px;
   }
 }
