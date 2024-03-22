@@ -647,6 +647,11 @@ nav {
   opacity: 1;
 }
 
+.project__icon {
+  color: white;
+  margin: 8px 12px 0 0;
+}
+
 /* Footer */
 
 footer {
