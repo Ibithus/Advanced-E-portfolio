@@ -698,6 +698,12 @@ footer .personal-logo {
 
 /* Make project overlay lighter when it is in dark mode and remove transition on mouse when dark mode is initiated */
 
+@media (max-width:1048px) {
+  .about__container {
+    width: 90%;
+  }
+}
+
 @media (max-width: 768px) {
   /* Navigation */
   .title--landing {
